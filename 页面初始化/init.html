@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 搜索引擎 -->
+    <meta name="keywords" content="关键词" />
+    <meta name="description" content="关键词描述" />
+    <!-- 适配移动端 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 以最新ie版本渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 响应式设置--begin -->
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <!-- 响应式设置--end -->
+    <!-- css初始化 -->
+    <link rel="stylesheet" href="./init.css" />
+    <!-- 在浏览器环境中使用 Less -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="./page.less" /> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js"></script> -->
+    <title>init</title>
+    <style>
+        body{
+            min-width: 750px;
+        }
+        .wrapper {
+            /* position: relative; */
+            height: 500px;
+            width: 100%;
+            /* margin: 0 auto; */
+            background:  red;
+            /* background: radial-gradient(red, orange, yellow, green, blue, indigo, violet); */
+            /* margin-left: 200px; */
+            /* margin-right:200px; */
+            float: left;
+            
+        }
+        .wrapper-inner{
+            margin-left: 300px;
+            margin-right: 300px;
+            min-width: 250px;
+        }
+        .wrapper2{
+            height: 500px;
+            width:300px;
+            background:  blue;
+            float: left;
+            margin-left: -100%;
+        }
+        .wrapper3{
+            height: 500px;
+            width:300px;
+            background: green;
+            float: left;
+            margin-left: -300px;
+        }
+        .test{
+            
+            /* max-width:600px; */
+            /* height: 100%; */
+            min-height: 200px;
+            width: 100%;
+            border: 1px solid #000;
+            margin: 0  200px; 
+        }
+        .clearDiv{
+            clear: both;
+        }
+        .testspan span{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-inner">
+
+        </div>
+         <!-- <div class="test"></div> -->
+        <!--<div class="page1">aaaaa111
+        </div>
+        <div class="page2">aaaaa222
+        </div>
+        <div class="page3">aaaaa333
+        </div> -->
+    </div>
+    <div class="wrapper2">
+
+    </div>
+    <div class="wrapper3">
+
+    </div>
+    <!-- 空div，用来清除浮动引起的父div高度为0 -->
+    <div class="clearDiv"></div>
+    <div class="testspan">
+        <span>span标签</span>
+    </div>
+    <script>
+    //     document.onclick=function(){
+	// 	alert(arguments.length); //浏览器会默认传递一个参数
+	// 	alert(arguments[0]);//[object MouseEvent]，如果是keydown,则为[object KeyboardEvent]
+	// }
+    </script>
+</body>
+
+</html>
